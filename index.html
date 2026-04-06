@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library App</title>
+    <link rel="stylesheet" href="assets\css\style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1><img src="assets\images\Books Icon.png" alt="Books Icon"> Welcome To Our Library!!</h1>
+
+    <h2>Add A New Book</h2>
+
+    <div class="add-form">
+        <label for="newTitle">Title:</label>
+        <input type="text" id="newTitle" name="book-title" placeholder=" Enter the title of your book..." required>
+    
+        <label for="newAuthor">Author's Name:</label>
+        <input type="text" id="newAuthor" name="author's-name" placeholder="Enter the author's name..." required>
+        <label for="newCategory">Category:</label>
+        <input id="newCategory" name="book-category" placeholder="Enter the category of your book..." required>
+
+        <label for="newType">Type:</label>
+        <select id="newType">
+            <option value="regular">Regular Book</option>
+            <option value="reference">Reference Book</option>
+        </select>
+
+        <label for="newLocation">Location Code:</label>
+        <input type="text" id="newLocation" name="Locationcode" placeholder="Enter The Location Code">
+
+        <button id="addBtn" class="add-btn">Add Book</button>
+    </div>
+
+    <h2 class="search-sentance">Please search your book!</h2>
+    <div class="controls">
+        <label for="searchInput">Search:</label>
+        <input type="text" id="searchInput" placeholder="Search your book...">
+
+        <label for="categoryFilter">Choose category:</label>
+        <select id="categoryFilter">
+            <option value="">All Categories</option>
+            <option value="Advanture">Advanture</option>
+            <option value="Romance">Romance</option>
+            <option value="Science Fiction">Science Fiction</option>
+            <option value="Historical">Historical</option>
+            <option value="Horror">Horror</option>
+        </select>
+    </div>
+    <div id="booksContainer" class="books-grid"></div>
+    <script type="module" src="assets\src\main.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+body{
+    background-color: rgb(215, 199, 230);
+}
+
+h1{
+    font-family: "PlayfairDisplay";
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(146, 63, 223);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 2);
+    margin-bottom: 30px;
+}
+
+img{
+    width:50px;
+    height: 50px;
+}
+
+h2{
+    text-align: center;
+    color: rgb(68, 44, 91);;
+}
+
+.add-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 40px;
+}
+
+.add-form input, .add-form select {
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border:1px solid rgb(68, 44, 91);
+    padding: 10px;
+    background-color: #b6a3d3;
+}
+
+.add-form label{
+    color: rgb(68, 44, 91);
+}
+
+.add-btn{
+    padding: 10px;
+    border-radius: 16px;
+    width: 500px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border:1px solid rgb(68, 44, 91);
+    color: rgb(68, 44, 91); 
+    margin-top: 20px;
+    margin-left: 350px;
+    margin-right: 350px; 
+    background-color: #b6a3d3;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px;
+    padding: 30px;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.controls label{
+    color: rgb(68, 44, 91);
+}
+.controls input , .controls select{
+    width: 400px;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border:1px solid rgb(68, 44, 91);
+    background-color: #b6a3d3;
+}
+
+.book-card {
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #b6a3d3, #2e1342);
+    border: 1px solid #ddd;
+    box-shadow:  3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.book-card h3 {
+    margin: 0 0 5px 0;
+    color: #39035f;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border:1px solid rgb(68, 44, 91);
+    color: rgb(68, 44, 91); 
+    background-color: #b6a3d3;
+}
